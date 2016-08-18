@@ -1,4 +1,4 @@
-# WhiteCore PHP Grid Manager #
+# WhiteCore PHP Grid-Manager #
 ***
 WhiteCore PHP GridManager is a PHP interface to manage the WhiteCore System in Gridmode.
 
