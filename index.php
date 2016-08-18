@@ -50,6 +50,10 @@ else if($a == "backup")
 {
 $ssh->exec("cd " .WC_ROOT. " && sudo screen -AmdS backup tar czf backup.$(date +%Y%m%d-%H%M%S).tar.gz .");
 }
+else if($a == "backup_mysql")
+{
+$ssh->exec("cd ". WC_PATH . "&& screen -AmdS backupdb ./backup_db.sh");
+}
 else
 {
 echo '<div class="row2" style ="background-color: #2ba6cb;" width=30%>';
