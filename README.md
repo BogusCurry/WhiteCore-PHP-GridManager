@@ -12,6 +12,7 @@ To get up and Running you will need to execute the following Commands:
 ```
 sudo apt-get update && sudo apt-get install libssh2-1 libssh2-php
 Copy run_gridmode_html.sh and stop_grid.sh to <WhiteCoreFolder>/WhiteCoreSim
+edit config.php with required datas
 ```
 
 ### To-Do ###
