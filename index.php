@@ -22,11 +22,12 @@ background-color: #DADADA;
 <nav class="navbar navbar-inverse navbar-static-top animate">
   <div class="container"> 
   <ul class="nav navbar-nav">
-   <li>  <a class="navbar-brand" href="/"><b>WhiteCore Grid Manager</b></a></li>
-  <li><a href="/">Home</a></li></li>
-   <li><a href="/?a=start">Start Grid</a></li></li>
-      <li><a href="/?a=stop">Stop Grid</a></li></li>
-      <li><a href="/?a=backup">Backup</a></li></li>
+   <li>  <a class="navbar-brand" href="index.php"><b>WhiteCore Grid Manager</b></a></li>
+  <li><a href="index.php">Home</a></li></li>
+   <li><a href="?a=start">Start Grid</a></li></li>
+      <li><a href="?a=stop">Stop Grid</a></li></li>
+      <li><a href="?a=backup">Backup</a></li></li>
+      <li><a href="?a=backup_mysql">Backup Database</a></li></li>
     </ul>
   </div>
 </nav>
@@ -48,10 +49,12 @@ echo $ssh->output();
 }
 else if($a == "backup")
 {
+echo "Starting backup in background.";
 $ssh->exec("cd " .WC_ROOT. " && sudo screen -AmdS backup tar czf backup.$(date +%Y%m%d-%H%M%S).tar.gz .");
 }
 else if($a == "backup_mysql")
 {
+echo "Starting MySQL backup in background.";
 $ssh->exec("cd ". WC_PATH . "&& screen -AmdS backupdb ./backup_db.sh");
 }
 else
