@@ -15,5 +15,5 @@ Copy run_gridmode_html.sh and stop_grid.sh to <WhiteCoreFolder>/WhiteCoreSim
 ```
 
 ### To-Do ###
-* Ability to Restore MySQL and .tar.gt backup
+* Ability to Restore MySQL and .tar.gz backup
 * See Grid Statistics (Memory Usage and CPU Usage)
