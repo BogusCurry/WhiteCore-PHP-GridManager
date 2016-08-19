@@ -3,12 +3,13 @@
 <title>WhiteCore Grid Manager</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
- 
 <script src="https://use.fontawesome.com/96c26a4572.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
 <meta charset="iso-8859-1" />
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <style type="text/css">
 body
 {
@@ -80,5 +81,6 @@ else
 echo "<font color='red'>Grid server Stopped</font><br />";
 }
 echo "</div>";
+echo "<br><br>";
 }
 ?>
