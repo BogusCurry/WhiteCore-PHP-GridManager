@@ -9,8 +9,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
 <meta charset="iso-8859-1" />
-<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <style type="text/css">
 body
 {

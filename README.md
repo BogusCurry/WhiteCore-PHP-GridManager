@@ -2,7 +2,7 @@
 ***
 WhiteCore PHP GridManager is a PHP interface to manage the WhiteCore System in Gridmode.
 
-Currently it is able to Start and Stop the Grid aswell as Running a backup of the GridServer Folder.
+Currently it is able to Start and Stop the Grid aswell as Running a backup of the GridServer Folder and the MySQL Database.
 
 ##Requirements##
 
