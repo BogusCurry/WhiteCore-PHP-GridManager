@@ -23,6 +23,7 @@ background-color: #DADADA;
   <li><a href="index.php">Home</a></li></li>
    <li><a href="?a=start">Start Grid</a></li></li>
       <li><a href="?a=stop">Stop Grid</a></li></li>
+      <li><a href="?a=restart">Restart Grid</a></li></li>
       <li><a href="?a=backup">Backup</a></li></li>
       <li><a href="?a=backup_mysql">Backup Database</a></li></li>
     </ul>
@@ -42,6 +43,14 @@ echo $ssh->output();
 else if($a == "stop")
 {
 $ssh->exec("cd ". WC_PATH . "&&  ./stop_grid.sh");
+echo $ssh->output();
+}
+else if($a == "restart")
+{
+echo "Restarting Grid";
+$ssh->exec("cd ". WC_PATH . "&&  ./stop_grid.sh");
+echo $ssh->output();
+$ssh->exec("cd ". WC_PATH . "&& ./run_gridmode_html.sh");
 echo $ssh->output();
 }
 else if($a == "backup")
