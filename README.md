@@ -18,3 +18,4 @@ edit config.php with required datas
 ### To-Do ###
 * Ability to Restore MySQL and .tar.gz backup
 * See Grid Statistics (Memory Usage and CPU Usage)
+* Edit Config files
